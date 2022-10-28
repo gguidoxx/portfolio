@@ -5,7 +5,7 @@ import Nav from "./components/Nav/Nav";
 
 export default function App() {
   return (
-    <div className="bg-slate-900 min-h-screen min-w-full">
+    <div className="bg-slate-900 min-h-screen w-full ">
       <Nav/>
       <div className="max-w-7xl m-auto">
         <Aboutme />

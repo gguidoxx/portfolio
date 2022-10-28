@@ -5,8 +5,14 @@ module.exports = {
   ],
   theme: {
     extend: {
+      screens:{
+        "xsm":"0px"
+      },
       animation: {
-        'bounce-slow': 'bounce 1s 2.5',
+        'bounce-slow': 'bounce 1s 2.55',
+      },
+      width:{
+        '120': '30rem'
       },
       colors:{
         personalized: {

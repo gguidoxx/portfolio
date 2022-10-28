@@ -1,9 +1,7 @@
 import React from "react";
 import pureglow from "../../assets/pureglow.jpg";
-import calculadorareact from "../../assets/calculadorareact.jpg"
-import portfolio from "../../assets/portfolio.jpg"
-
-
+import calculadorareact from "../../assets/calculadorareact.jpg";
+import portfolio from "../../assets/portfolio.jpg";
 
 import Buttons from "../Buttons/Buttons";
 function Cards() {
@@ -30,22 +28,6 @@ function Cards() {
       img: portfolio,
       linkGit: "https://github.com/gguidoxx/portfolio",
       linkLive: "https://guido-gutierrez-portfolio.vercel.app/",
-
-    },
-    {
-      title: "Pure Glow",
-      desc: "Un e-commerce de cosméticos centrados en maquillaje.",
-      img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRqqVFpz0W7-EzJesRsVcZfY7LoP-w2f4K_CQ&usqp=CAU",
-    },
-    {
-      title: "Pure Glow",
-      desc: "Un e-commerce de cosméticos centrados en maquillaje.",
-      img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRqqVFpz0W7-EzJesRsVcZfY7LoP-w2f4K_CQ&usqp=CAU",
-    },
-    {
-      title: "Pure Glow",
-      desc: "Un e-commerce de cosméticos centrados en maquillaje.",
-      img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRqqVFpz0W7-EzJesRsVcZfY7LoP-w2f4K_CQ&usqp=CAU",
     },
   ];
   return (
@@ -54,7 +36,7 @@ function Cards() {
         Mis proyectos
       </h1>
       <br></br>
-      <div className="md:grid-cols-2  sm:grid-cols-1 grid gap-20 sm:grid-rows-1 lg:grid-cols-2 xl:grid-cols-3 ">
+      <div className="md:grid-cols-1  sm:grid-cols-1 grid gap-20 sm:grid-rows-1 lg:grid-cols-2 xl:grid-cols-3 ">
         {cards.map((e) => (
           <div
             id={e.title}
