@@ -1,6 +1,9 @@
 import React from "react";
 import pureglow from "../../assets/pureglow.jpg";
-import calculadorareact from "../../assets/calculadorareact.jpg";
+import calculadorareact from "../../assets/calculadorareact.jpg"
+import portfolio from "../../assets/portfolio.jpg"
+
+
 
 import Buttons from "../Buttons/Buttons";
 function Cards() {
@@ -21,9 +24,13 @@ function Cards() {
       linkLive: "https://calculadora-react-vert.vercel.app/",
     },
     {
-      title: "Pure Glow",
-      desc: "Un e-commerce de cosméticos centrados en maquillaje.",
-      img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRqqVFpz0W7-EzJesRsVcZfY7LoP-w2f4K_CQ&usqp=CAU",
+      //ESTÁ ÚNICAMENTE DE RELLENO, EL PORTFOLIO NO DEBERÍA IR ACÁ
+      title: "Portfolio",
+      desc: "Un portfolio que fue puesto de relleno para ver como quedaría con proyectos reales, acá iría otro a futuro.",
+      img: portfolio,
+      linkGit: "https://github.com/gguidoxx/portfolio",
+      linkLive: "https://guido-gutierrez-portfolio.vercel.app/",
+
     },
     {
       title: "Pure Glow",
@@ -63,7 +70,9 @@ function Cards() {
               </div>
               <br />
 
-              <h3 className="ml-1 m-auto max-w-full text-3xl underline">{e.title}</h3>
+              <h3 className="ml-1 m-auto max-w-full text-3xl underline">
+                {e.title}
+              </h3>
               <br />
               <h5 className="ml-1 m-auto flex-wrap max-w-xs">{e.desc}</h5>
             </div>
