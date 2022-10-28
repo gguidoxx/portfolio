@@ -4,7 +4,7 @@ import Buttons from "../Buttons/Buttons";
 
 function Aboutme() {
   return (
-   <div class="text-white">Esto es about</div>
+   <div className="text-white animate-bounce-slow"><h2 class="text-pink-600 text-2xl ">¡Bienvenido a mi Portfolio!</h2><h5>Mi nombre es Guido Gutierrez, vivo en Mendoza, Argentina. Tengo 21 años</h5></div>
   );
 }
 

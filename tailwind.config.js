@@ -5,6 +5,9 @@ module.exports = {
   ],
   theme: {
     extend: {
+      animation: {
+        'bounce-slow': 'bounce 1s 2.5',
+      },
       colors:{
         personalized: {
           '50':  '#f6f9fb',
