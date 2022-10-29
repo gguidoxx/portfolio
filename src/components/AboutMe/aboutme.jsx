@@ -35,8 +35,6 @@ function Aboutme() {
         </div>
       </div>
       <hr class="border-personalized-600" />
-      <br />
-      <br />
     </>
   );
 }

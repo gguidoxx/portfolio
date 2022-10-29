@@ -27,6 +27,9 @@ function Conocimientos() {
         <h1 className="leading-loose text-3xl text-center text-blue-50">
           Conocimientos
         </h1>
+      <br />
+      <br />
+
         <div class="grid sm:grid-cols-2 xsm:grid-cols-3 md:grid-cols-2 lg:grid-cols-3 m-auto gap-9 sm:translate-x-20 xsm:translate-x-9">
           {imagenes.map((e) => (
             <img src={e} class="sm:max-h-xxs  xsm:max-h-xxxs "></img>
