@@ -4,22 +4,20 @@ function Contacto() {
   return (
     <>
       <hr class="border-personalized-600" />
-      <div class="flex flex-row text-white ">
-        <div class="lg:min-w-40 m-auto">
+      <div class="flex md:flex-row xsm:flex-col xsm:m-auto  text-white  ">
+        <div class="lg:min-w-40 m-auto md:w-96 xl:w-120 ">
           <h1 class="text-3xl text-center">¿Quieres contactarme?</h1>
-          <p class="m-auto max-w-xl">
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorum
-            nulla reiciendis quaerat cum quam perspiciatis praesentium et ad
-            quis eius, atque provident quos odit corrupti quia aspernatur
-            possimus? Illo, quam.
+          <p class="max-w-xl text-center">
+            Para contactarme, puedes enviar un correo, comunicarte mediante mis
+            redes sociales o contactar a mi número telefónico.
           </p>
         </div>
-        <div>
+        <div class="md:w-96 xl:w-120 xsm:w-64 sm:w-72 mr-9 xsm:flex-col xsm:m-auto">
           <br />
           <br />
           <br />
           <form class="">
-            <div class="max-w-xs min-w-56 ">
+            <div class="max-w-xs">
               <label
                 for="email-address-icon"
                 class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300"
@@ -39,12 +37,17 @@ function Contacto() {
                     <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"></path>
                   </svg>
                 </div>
-                <input
-                  type="text"
-                  id="email-address-icon"
-                  class=" border-2 border-pink-600  text-sm rounded-lg  focus:border-blue-500 block w-56 pl-10 p-2.5  bg-gray-700  placeholder-gray-400 text-white focus:ring-blue-500 "
-                  placeholder="email@example.com"
-                />
+                <div class="flex md:w-96 xl:w-120 xsm:w-64 sm:w-72">
+                  <span class="inline-flex items-center px-3 text-sm  rounded-l-md border border-r-0  bg-gray-600 text-gray-600 border-t-pink-600 border-l-pink-600 border-b-pink-600">
+                    A..
+                  </span>
+                  <input
+                    type="text"
+                    id="website-admin"
+                    class="rounded-none rounded-r-lg border border-pink-600  focus:ring-blue-500 focus:border-blue-500 block flex-1 min-w-0 md:w-56 text-sm p-2.5 bg-gray-700 placeholder-gray-400 text-white  "
+                    placeholder="example@mail.com"
+                  />
+                </div>
               </div>
               <br />
               <label
@@ -53,7 +56,7 @@ function Contacto() {
               >
                 Nombre y apellido
               </label>
-              <div class="flex w-56">
+              <div class="flex md:w-96 xl:w-120 xsm:w-64 sm:w-72">
                 <span class="inline-flex items-center px-3 text-sm  rounded-l-md border border-r-0  bg-gray-600 text-gray-400 border-t-pink-600 border-l-pink-600 border-b-pink-600">
                   @
                 </span>
@@ -65,7 +68,7 @@ function Contacto() {
                 />
               </div>
             </div>
-            <div class="hola">
+            <div class="">
               <label
                 for="Su mensaje"
                 class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300"
@@ -74,8 +77,8 @@ function Contacto() {
               </label>
               <textarea
                 type="text"
-                id="small-input"
-                class="block p-2 rounded-lg border  sm:text-xs  focus:border-blue-500 bg-gray-700  border-pink-600 placeholder-gray-400 text-white focus:ring-blue-500 dark:focus:border-blue-500 w-120 h-142"
+                id="website-admin"
+                class="block p-2 rounded-lg border  sm:text-xs  focus:border-blue-500 bg-gray-700  border-pink-600 placeholder-gray-400 text-white focus:ring-blue-500 dark:focus:border-blue-500 md:w-96 xl:w-120 xsm:w-64  sm:w-72 h-142"
               />
             </div>
           </form>

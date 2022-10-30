@@ -48,9 +48,7 @@ body::-webkit-scrollbar-thumb {
   background-color: rgb(190, 10, 34); /* color of the scroll thumb */
   border-radius: 20px; /* roundness of the scroll thumb */
 }
-body {
-  overflow-x: hidden;
-}
+
 html {
   overflow-x: hidden;
 }
