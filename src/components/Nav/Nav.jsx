@@ -43,7 +43,7 @@ function Nav() {
           </li>
           <li>
             <a
-              href="#"
+              href="#contacto"
               class="block py-2 pr-4 pl-3 rounded hover:bg-pink-500  hover:text-slate-200 text-gray-400  border-gray-700"
             >
               Contacto

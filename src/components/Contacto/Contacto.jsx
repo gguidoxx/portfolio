@@ -3,7 +3,7 @@ import React from "react";
 function Contacto() {
   return (
     <>
-      <hr class="border-personalized-600" />
+      <hr class="border-personalized-600" id="contacto" />
       <div class="flex md:flex-row xsm:flex-col xsm:m-auto  text-white  ">
         <div class="lg:min-w-40 m-auto md:w-96 xl:w-120 ">
           <h1 class="text-3xl text-center">¿Quieres contactarme?</h1>
