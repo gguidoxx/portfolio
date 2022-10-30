@@ -7,14 +7,14 @@ import Nav from "./components/Nav/Nav";
 
 export default function App() {
   return (
-    <div className="min-h-full bg-slate-900">
+    <div className="max-w-md min-h-full bg-slate-900">
       <Nav />
       <div className=" 2xl:m-auto">
-        <Aboutme />
-        <Conocimientos />
-        <Cards />
+        <Aboutme className="w-screen" />
+        <Conocimientos className="w-screen" />
+        <Cards className="w-screen" />
         <br></br>
-        <Contacto />
+        <Contacto className="w-screen" />
       </div>
     </div>
   );

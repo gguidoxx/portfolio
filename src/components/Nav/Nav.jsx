@@ -53,7 +53,7 @@ function Nav() {
 
         <div
           onClick={topFunction}
-          className="fixed text-lg text-white bg-pink-800 rounded-full bottom-7 scroll-smooth"
+          className="fixed text-lg text-white bg-pink-800 rounded-full bottom-7 xsm:left-0 md:left-0 scroll-smooth"
           id={"myBtn"}
         >
           <FiChevronsUp
