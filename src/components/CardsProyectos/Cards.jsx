@@ -32,31 +32,31 @@ function Cards() {
   ];
   return (
     <section id="projects">
-      <h1 className="leading-loose text-3xl text-center text-blue-50">
+      <h1 className="text-3xl leading-loose text-center text-blue-50">
         Mis proyectos
       </h1>
       <br></br>
-      <div className="md:grid-cols-1  sm:grid-cols-1 grid gap-20 sm:grid-rows-1 lg:grid-cols-2 xl:grid-cols-3 ">
+      <div className="grid gap-20 md:grid-cols-1 sm:grid-cols-1 sm:grid-rows-1 lg:grid-cols-2 xl:grid-cols-3 ">
         {cards.map((e) => (
           <div
             id={e.title}
-            className=" bg-slate-100 rounded-md max-w-full min-w-min m-auto w-auto hover:bg-slate-300 h-full border-2 border-pink-500"
+            className="h-full max-w-full m-auto border-2 border-pink-500 rounded-md  bg-slate-100 min-w-min hover:bg-slate-300"
           >
             <div className="h-max w-max">
               <div className="rounded-2xl">
                 <img
                   src={e.img}
                   alt="Pic1"
-                  className=" min-h-full lg:h-full lg:max-w-sm w-96 rounded-sm rounded-b-none m-auto"
+                  className="min-h-full m-auto rounded-sm rounded-b-none lg:h-full lg:max-w-sm w-80"
                 />
               </div>
               <br />
 
-              <h3 className="ml-1 m-auto max-w-full text-3xl underline">
+              <h3 className="max-w-full m-auto ml-1 text-3xl underline">
                 {e.title}
               </h3>
               <br />
-              <h5 className="ml-1 m-auto flex-wrap max-w-xs">{e.desc}</h5>
+              <h5 className="flex-wrap max-w-xs m-auto ml-1">{e.desc}</h5>
             </div>
             <Buttons linkGit={e.linkGit} linkLive={e.linkLive} />
           </div>
