@@ -7,9 +7,9 @@ import Nav from "./components/Nav/Nav";
 
 export default function App() {
   return (
-    <div className="bg-slate-900 min-h-full w-full xsm:w-screen">
+    <div className="min-h-full bg-slate-900">
       <Nav />
-      <div className="max-w-7xl xsm:ml-7 2xl:m-auto">
+      <div className=" 2xl:m-auto">
         <Aboutme />
         <Conocimientos />
         <Cards />
