@@ -7,7 +7,7 @@ import Buttons from "../Buttons/Buttons";
 function Aboutme() {
   return (
     <>
-      <div className="text-white md:animate-bounce-slow xsm:animate-none">
+      <div className="text-white md:animate-bounce-slow xsm:animate-none ">
         <h2 class="text-pink-600 text-2xl ">¡Bienvenido a mi Portfolio!</h2>
         <div class="md:flex sm:inline sm:m-auto ">
           <span class="w-96">
@@ -34,7 +34,9 @@ function Aboutme() {
           </div>
         </div>
       </div>
-      <hr class="border-personalized-600" />
+      <hr class="border-personalized-600" id="conocimientos" />
+      <br />
+      <br />
     </>
   );
 }

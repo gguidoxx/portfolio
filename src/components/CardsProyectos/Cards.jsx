@@ -31,7 +31,7 @@ function Cards() {
     },
   ];
   return (
-    <section id="projects">
+    <section>
       <h1 className="text-3xl leading-loose text-center text-blue-50">
         Mis proyectos
       </h1>
@@ -61,6 +61,8 @@ function Cards() {
             <Buttons linkGit={e.linkGit} linkLive={e.linkLive} />
           </div>
         ))}
+        <br />
+        <br />
       </div>
     </section>
   );

@@ -35,7 +35,11 @@ function Conocimientos() {
             <img src={e} class="sm:max-h-xxs  xsm:max-h-xxxs "></img>
           ))}
         </div>
-        <hr class="border-personalized-600" />
+        <br />
+      <br />
+        <hr class="border-personalized-600"  id="projects" />
+        <br />
+      <br />
       </div>
     </>
   );
