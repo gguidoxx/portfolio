@@ -40,7 +40,7 @@ function Cards() {
         {cards.map((e) => (
           <div
             id={e.title}
-            className="h-full max-w-full m-auto border-2 border-pink-500 rounded-md  bg-slate-100 min-w-min hover:bg-slate-300"
+            className="h-full max-w-full m-auto border-2 border-pink-500 rounded-md  bg-slate-200 min-w-min hover:bg-slate-400"
           >
             <div className="h-max w-max">
               <div className="rounded-2xl">

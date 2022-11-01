@@ -8,7 +8,7 @@ import Nav from "./components/Nav/Nav";
 export default function App() {
   return (
     <div className="min-h-full m-auto bg-slate-900 max-w-7xl">
-      <Nav />
+      <Nav/>
       <div className="m-auto">
         <Aboutme />
         <Conocimientos/>

@@ -14,6 +14,7 @@ module.exports = {
       },
       width: {
         120: "30rem",
+        "120full": "120%",
       },
       minWidth: {
         20: "20rem",

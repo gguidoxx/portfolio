@@ -33,12 +33,12 @@ function Nav() {
 
   return (
     <>
-      <nav class="flex flex-col justify-between items-center  pr-8 pb-2 pl-6  w-auto  mt-0 m-auto sticky top-0 z-0">
-        <ul class="sm:flex flex-row p-2 m-auto  w-full  space-x-8  text-font-medium border-0 bg-gray-800 border-gray-700 xsm:hidden z-20">
+      <nav class="flex flex-col justify-between items-center  pr-0 pb-2 pl-0 w-auto m-auto sticky top-0 z-0">
+        <ul class="lg:flex flex-row p-2 m-auto  w-auto  space-x-8  text-font-medium border-0 bg-gray-800 border-gray-700 xsm:hidden z-20">
           <li>
             <a
               href="#"
-              class="block py-2 pr-4 pl-3 rounded hover:bg-pink-500  hover:text-slate-200 text-gray-400  border-gray-700"
+              class="block py-2 pr-4 pl-3 rounded  hover:text-lime-400  text-gray-400  border-gray-700"
               title="Acerca de mí"
             >
               Acerca de
@@ -47,7 +47,7 @@ function Nav() {
           <li>
             <a
               href="#conocimientos"
-              class="block py-2 pr-4 pl-3 rounded hover:bg-pink-500  hover:text-slate-200 text-gray-400  border-gray-700"
+              class="block py-2 pr-4 pl-3 rounded  hover:text-lime-400 text-gray-400  border-gray-700"
               title="Conocimientos"
             >
               Conocimientos
@@ -56,7 +56,7 @@ function Nav() {
           <li>
             <a
               href="#projects"
-              class="block py-2 pr-4 pl-3 rounded  hover:bg-pink-500  hover:text-slate-200 text-gray-400  border-gray-700"
+              class="block py-2 pr-4 pl-3 rounded   hover:text-lime-400 text-gray-400  border-gray-700"
               title="Proyectos"
             >
               Proyectos
@@ -65,7 +65,7 @@ function Nav() {
           <li>
             <a
               href="#contacto"
-              class="block py-2 pr-4 pl-3 rounded hover:bg-pink-500  hover:text-slate-200 text-gray-400  border-gray-700"
+              class="block py-2 pr-4 pl-3 rounded  hover:text-lime-400 text-gray-400  border-gray-700"
               title="Contáctame"
             >
               Contacto
@@ -74,7 +74,7 @@ function Nav() {
           <li>
             <a
               href={cv}
-              class="block py-2 pr-4 pl-3 rounded hover:bg-pink-500  hover:text-slate-200 text-gray-400  border-gray-700"
+              class="block py-2 pr-4 pl-3 rounded  hover:text-lime-400 text-gray-400  border-gray-700"
               title="Descargar CV"
               download
             >
@@ -82,10 +82,10 @@ function Nav() {
             </a>
           </li>
         </ul>
-        <ul class="sm:hidden flex-row p-2 m-auto rounded-lg  border-gray-100  space-x-8  text-font-medium border-0 bg-gray-800 dark:border-gray-700 xsm:flex text-white z-20">
+        <div class="lg:hidden flex-row justify-around  p-4 -mt-1 w-full border-gray-100 space-x-8  text-font-medium border-0 bg-gray-800 dark:border-gray-700 xsm:flex text-white z-20 ">
           <a
             href="#"
-            className="block py-2 pr-4 pl-3 rounded hover:bg-pink-500  hover:text-slate-200 text-gray-400  border-gray-700 z-20"
+            className="z-20 block w-0 text-gray-400 border-gray-700 rounded hover:text-lime-400"
             title="About"
           >
             <AiOutlineUser size={25} />
@@ -93,21 +93,21 @@ function Nav() {
 
           <a
             href="#conocimientos"
-            className="block py-2 pr-4 pl-3 rounded hover:bg-pink-500  hover:text-slate-200 text-gray-400  border-gray-700"
+            className="block w-0 text-gray-400 border-gray-700 rounded hover:text-lime-400"
             title="Conocimientos"
           >
             <BsBook size={25} />
           </a>
           <a
             href="#projects"
-            className="block py-2 pr-4 pl-3 rounded hover:bg-pink-500  hover:text-slate-200 text-gray-400  border-gray-700"
+            className="block w-0 text-gray-400 border-gray-700 rounded hover:text-lime-400"
             title="Proyectos"
           >
             <MdWorkOutline size={25} />
           </a>
           <a
             href="#contacto"
-            className="block py-2 pr-4 pl-3 rounded hover:bg-pink-500  hover:text-slate-200 text-gray-400  border-gray-700"
+            className="block w-0 text-gray-400 border-gray-700 rounded hover:text-lime-400 "
             title="Contáctame"
           >
             <GoMailRead size={25} />
@@ -115,12 +115,12 @@ function Nav() {
           <a
             href={cv}
             download
-            className=" py-2 pr-4 pl-3 rounded hover:bg-pink-500  hover:text-slate-200 text-gray-400  border-gray-700 flex"
+            className="flex w-0 text-gray-400 border-gray-700 rounded hover:text-lime-400 "
           >
             <p>CV</p>
             <BiDownload size={25} />
           </a>
-        </ul>
+        </div>
       </nav>
       <div
         onClick={topFunction}
