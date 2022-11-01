@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import copy from "copy-to-clipboard";
 import { RiGithubLine } from "react-icons/ri";
 import { BsWhatsapp } from "react-icons/bs";
+import { AiOutlineMail } from "react-icons/ai";
 import { BsLinkedin } from "react-icons/bs";
 
 function Contacto() {
@@ -28,23 +29,30 @@ function Contacto() {
             <a
               href="https://www.linkedin.com/in/guidosgutierrez/"
               target="_blank"
-              className="w-11 m-auto"
+              className="m-auto w-11"
             >
-              <BsLinkedin size={45} title="LinkedIn: Guido Gutierrez"/>
+              <BsLinkedin size={45} title="LinkedIn: Guido Gutierrez" />
             </a>
             <a
               href="https://wa.me/5492615798302"
               target="_blank "
-              className="w-11 m-auto"
+              className="m-auto w-11"
             >
               <BsWhatsapp size={45} title="Whatsapp: +54 9 2615798302" />
             </a>
             <a
               href="https://github.com/gguidoxx"
               target="_blank "
-              className="w-11 m-auto"
+              className="m-auto w-11"
             >
-              <RiGithubLine size={45} title="Github: gguidoxx"/>
+              <RiGithubLine size={45} title="Github: gguidoxx" />
+            </a>
+            <a
+              href="mailto:gudombe@gmail.com"
+              target="_blank "
+              className="m-auto w-11"
+            >
+              <AiOutlineMail size={45} title="Github: gguidoxx" />
             </a>
           </div>
         </div>
