@@ -1,6 +1,17 @@
-import React from "react";
+import React, { useState } from "react";
+import copy from "copy-to-clipboard";
+import { RiGithubLine } from "react-icons/ri";
+import { BsWhatsapp } from "react-icons/bs";
+import { BsLinkedin } from "react-icons/bs";
 
 function Contacto() {
+  const [copyText, setCopyText] = useState("Hola");
+
+  const copyToClipboard = () => {
+    copy(copyText);
+    alert(`You have copied "${copyText}"`);
+  };
+
   return (
     <>
       <hr class="border-personalized-600" id="contacto" />
@@ -13,6 +24,29 @@ function Contacto() {
             Para contactarme, puedes enviar un correo, comunicarte mediante mis
             redes sociales o contactar a mi número telefónico.
           </p>
+          <div class="w-full flex pt-6 m-auto">
+            <a
+              href="https://www.linkedin.com/in/guidosgutierrez/"
+              target="_blank"
+              className="w-11 m-auto"
+            >
+              <BsLinkedin size={45} title="LinkedIn: Guido Gutierrez"/>
+            </a>
+            <a
+              href="https://wa.me/5492615798302"
+              target="_blank "
+              className="w-11 m-auto"
+            >
+              <BsWhatsapp size={45} title="Whatsapp: +54 9 2615798302" />
+            </a>
+            <a
+              href="https://github.com/gguidoxx"
+              target="_blank "
+              className="w-11 m-auto"
+            >
+              <RiGithubLine size={45} title="Github: gguidoxx"/>
+            </a>
+          </div>
         </div>
         <div class="md:w-96 xl:w-120 xsm:w-64 sm:w-72 mr-9 xsm:flex-col xsm:m-auto">
           <br />
