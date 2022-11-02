@@ -4,6 +4,7 @@ import { RiGithubLine } from "react-icons/ri";
 import { BsWhatsapp } from "react-icons/bs";
 import { AiOutlineMail } from "react-icons/ai";
 import { BsLinkedin } from "react-icons/bs";
+import { motion } from "framer-motion";
 
 function Contacto() {
   const [copyText, setCopyText] = useState("Hola");
@@ -26,34 +27,46 @@ function Contacto() {
             redes sociales o contactar a mi número telefónico.
           </p>
           <div class="w-full flex pt-6 m-auto">
-            <a
+            <motion.a
+              whileHover={{scale: 1.2}}
+              whileTap={{scale: 1.2}}
+              transition={{duration: 0.3}}
               href="https://www.linkedin.com/in/guidosgutierrez/"
               target="_blank"
-              className="m-auto w-11"
+              className="m-auto rounded-md w-11 hover:text-blue-600 hover:bg-white"
             >
               <BsLinkedin size={45} title="LinkedIn: Guido Gutierrez" />
-            </a>
-            <a
+            </motion.a>
+            <motion.a
+              whileHover={{scale: 1.2}}
+              whileTap={{scale: 1.2}}
+              transition={{duration: 0.3}}
               href="https://wa.me/5492615798302"
               target="_blank "
-              className="m-auto w-11"
+              className="m-auto w-11 hover:bg-green-500 hover:rounded-full"
             >
               <BsWhatsapp size={45} title="Whatsapp: +54 9 2615798302" />
-            </a>
-            <a
+            </motion.a>
+            <motion.a
+              whileHover={{scale: 1.2}}
+              whileTap={{scale: 1.2}}
+              transition={{duration: 0.3}}
               href="https://github.com/gguidoxx"
               target="_blank "
-              className="m-auto w-11"
+              className="m-auto w-11 "
             >
               <RiGithubLine size={45} title="Github: gguidoxx" />
-            </a>
-            <a
+            </motion.a>
+            <motion.a
+              whileHover={{scale: 1.2}}
+              whileTap={{scale: 1.2}}
+              transition={{duration: 0.3}}
               href="mailto:gudombe@gmail.com"
               target="_blank "
               className="m-auto w-11"
             >
-              <AiOutlineMail size={45} title="Github: gguidoxx" />
-            </a>
+              <AiOutlineMail size={45} title="Correo: gudombe@gmail.com" />
+            </motion.a>
           </div>
         </div>
         <div class="md:w-96 xl:w-120 xsm:w-64 sm:w-72 mr-9 xsm:flex-col xsm:m-auto">
