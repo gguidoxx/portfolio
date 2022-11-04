@@ -8,7 +8,6 @@ import { GoMailRead } from "react-icons/go";
 import cv from "../../assets/cv.pdf";
 
 function Nav() {
-
   function topFunction() {
     document.body.scrollTop = 0; // For Safari
     document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
@@ -107,8 +106,9 @@ function Nav() {
       </nav>
       <div
         onClick={topFunction}
-        className="fixed text-lg text-white bg-pink-800 rounded-full bottom-7 xsm:left-1 md:left-7 scroll-smooth"
+        className="fixed text-lg text-white bg-pink-800 rounded-full bottom-7 xsm:left-1 md:left-7 scroll-smooth hover:scale-150 hover:text-neutral-800 hover:bg-slate-200 "
         id={"myBtn"}
+        title="Ir arriba"
       >
         <FiChevronsUp
           style={{ width: "50px", height: "50px", cursor: "pointer" }}

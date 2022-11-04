@@ -35,7 +35,7 @@ function Conocimientos() {
           {imagenes.map((e) => (
             <motion.img
               src={e}
-              class="sm:max-h-xxs  xsm:max-h-xxxs "
+              class="sm:max-h-xxs  xsm:max-h-xxxs"
               initial={{ scale: 1 }}
               whileHover={{ scale: 1.5 }}
             ></motion.img>

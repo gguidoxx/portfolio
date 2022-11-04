@@ -1,11 +1,42 @@
-import React from "react";
+import React, { useRef } from "react";
 import { RiGithubLine } from "react-icons/ri";
 import { BsWhatsapp } from "react-icons/bs";
 import { AiOutlineMail } from "react-icons/ai";
 import { BsLinkedin } from "react-icons/bs";
 import { motion } from "framer-motion";
+import emailjs from "@emailjs/browser";
+import toast, { Toaster } from "react-hot-toast";
 
 function Contacto() {
+  let errors = {};
+  const form = useRef();
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    emailjs
+      .sendForm(
+        "service_6aoo9xz",
+        "template_qmod47d",
+        form.current,
+        "nsR4tZhBowRxFC-w5"
+      )
+      .then(
+        (result) => {
+          toast(
+            "¡Gracias por contactarte conmigo, estaré respondiendo lo antes posible!",
+            {
+              duration: 4000,
+              style: {
+                background: "rgb(22 163 74)",
+                color: "white",
+              },
+            }
+          );
+        },
+        (error) => {
+          console.log(error);
+        }
+      );
+  };
   return (
     <>
       <hr class="border-personalized-600" id="contacto" />
@@ -65,7 +96,7 @@ function Contacto() {
           <br />
           <br />
           <br />
-          <form class="">
+          <form class="" ref={form} onSubmit={handleSubmit}>
             <div class="max-w-xs">
               <label
                 for="email-address-icon"
@@ -91,10 +122,12 @@ function Contacto() {
                     A..
                   </span>
                   <input
+                    required
                     type="text"
                     id="website-admin"
-                    class="rounded-none rounded-r-lg border border-pink-600  focus:ring-blue-500 focus:border-blue-500 block flex-1 min-w-0 md:w-56 text-sm p-2.5 bg-gray-700 placeholder-gray-400 text-white  "
+                    class="rounded-none rounded-r-lg border border-pink-600  focus:ring-blue-500 focus:border-blue-500 block flex-1 min-w-0 md:w-56 text-sm p-2.5 bg-gray-700 placeholder-gray-400 text-white  focus:bg-gray-900"
                     placeholder="example@mail.com"
+                    name="reply_to"
                   />
                 </div>
               </div>
@@ -110,14 +143,16 @@ function Contacto() {
                   @
                 </span>
                 <input
+                  required
                   type="text"
                   id="website-admin"
+                  name="from_name"
                   class="rounded-none rounded-r-lg border border-pink-600  focus:ring-blue-500 focus:border-blue-500 block flex-1 min-w-0 md:w-56 text-sm p-2.5 bg-gray-700 placeholder-gray-400 text-white  "
                   placeholder="Bonnie Green"
                 />
               </div>
             </div>
-            <div class="">
+            <div class="grid grid-flow-row pt-6">
               <label
                 for="Su mensaje"
                 class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300"
@@ -125,10 +160,17 @@ function Contacto() {
                 Su mensaje
               </label>
               <textarea
+                required
                 type="text"
                 id="website-admin"
-                class="block p-2 rounded-lg border  sm:text-xs  focus:border-blue-500 bg-gray-700  border-pink-600 placeholder-gray-400 text-white focus:ring-blue-500 dark:focus:border-blue-500 md:w-96 xl:w-120 xsm:w-64  sm:w-72 h-142"
+                class="block p-2 rounded-lg border  h-142  focus:border-blue-500 bg-gray-700  border-pink-600 placeholder-gray-400 text-white focus:ring-blue-500 dark:focus:border-blue-500 md:w-96 xl:w-120 xsm:w-64 sm:w-72 sm:text-xs"
+                name="message"
               />
+              <input
+                class="my-2 p-1 border-2 rounded-lg border-pink-600 hover:text-slate-100 hover:bg-pink-600 w-40 justify-end cursor-pointer"
+                type="submit"
+                value="Enviar correo"
+              ></input>
             </div>
           </form>
         </div>

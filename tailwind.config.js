@@ -28,6 +28,9 @@ module.exports = {
         xxs: "10rem",
         xxxs: "4rem",
       },
+      padding: {
+        1: "4px",
+      },
       colors: {
         personalized: {
           50: "#f6f9fb",

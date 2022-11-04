@@ -1,3 +1,4 @@
+import { Toaster } from "react-hot-toast";
 import "./App.css";
 import Aboutme from "./components/AboutMe/aboutme";
 import Cards from "./components/CardsProyectos/Cards";
@@ -16,6 +17,7 @@ export default function App() {
         <br></br>
         <Contacto />
       </div>
+      <Toaster position="bottom-right" reverseOrder={false} />
     </div>
   );
 }
