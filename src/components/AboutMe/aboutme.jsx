@@ -1,10 +1,6 @@
 import React from "react";
-import pureglow from "../../assets/pureglow.jpg";
 import foto from "../../assets/cvfoto.jpg";
-import cv from "../../assets/SVG/cv.svg";
 import { motion } from "framer-motion";
-
-import Buttons from "../Buttons/Buttons";
 
 function Aboutme() {
   return (

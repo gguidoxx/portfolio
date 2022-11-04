@@ -31,16 +31,16 @@ function Cards() {
     },
   ];
   return (
-    <section className="pb-24">
-      <h1 className="text-3xl leading-loose text-center text-blue-50 pb-12 pt-12">
+    <section className="pb-24 select-text">
+      <h1 className="text-3xl leading-loose text-center text-blue-50 pb-12 pt-12 ">
         Mis proyectos
       </h1>
-      
+
       <div className="grid gap-20 md:grid-cols-1 sm:grid-cols-1 sm:grid-rows-1 lg:grid-cols-2 xl:grid-cols-3 ">
         {cards.map((e) => (
           <div
             id={e.title}
-            className="h-full max-w-full m-auto border-2 border-pink-500 rounded-md  bg-slate-200 min-w-min hover:bg-slate-400"
+            className="h-full max-w-full m-auto border-2 border-pink-500  rounded-md  bg-slate-200 min-w-min hover:bg-slate-400"
           >
             <div className="h-max w-max">
               <div className="rounded-2xl">
@@ -61,7 +61,6 @@ function Cards() {
             <Buttons linkGit={e.linkGit} linkLive={e.linkLive} />
           </div>
         ))}
-      
       </div>
     </section>
   );

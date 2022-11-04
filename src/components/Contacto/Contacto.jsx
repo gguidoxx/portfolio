@@ -1,5 +1,4 @@
-import React, { useState } from "react";
-import copy from "copy-to-clipboard";
+import React from "react";
 import { RiGithubLine } from "react-icons/ri";
 import { BsWhatsapp } from "react-icons/bs";
 import { AiOutlineMail } from "react-icons/ai";
@@ -7,19 +6,12 @@ import { BsLinkedin } from "react-icons/bs";
 import { motion } from "framer-motion";
 
 function Contacto() {
-  const [copyText, setCopyText] = useState("Hola");
-
-  const copyToClipboard = () => {
-    copy(copyText);
-    alert(`You have copied "${copyText}"`);
-  };
-
   return (
     <>
       <hr class="border-personalized-600" id="contacto" />
       <br />
       <br />
-      <div class="flex md:flex-row xsm:flex-col xsm:m-auto  text-white  ">
+      <div class="flex md:flex-row xsm:flex-col xsm:m-auto  text-white  select-text">
         <div class="lg:min-w-40 m-auto md:w-96 xl:w-120 ">
           <h1 class="text-3xl text-center">¿Quieres contactarme?</h1>
           <p class="max-w-xl text-center">
@@ -28,9 +20,9 @@ function Contacto() {
           </p>
           <div class="w-full flex pt-6 m-auto">
             <motion.a
-              whileHover={{scale: 1.2}}
-              whileTap={{scale: 1.2}}
-              transition={{duration: 0.3}}
+              whileHover={{ scale: 1.2 }}
+              whileTap={{ scale: 1.2 }}
+              transition={{ duration: 0.3 }}
               href="https://www.linkedin.com/in/guidosgutierrez/"
               target="_blank"
               className="m-auto rounded-md w-11 hover:text-blue-600 hover:bg-white"
@@ -38,9 +30,9 @@ function Contacto() {
               <BsLinkedin size={45} title="LinkedIn: Guido Gutierrez" />
             </motion.a>
             <motion.a
-              whileHover={{scale: 1.2}}
-              whileTap={{scale: 1.2}}
-              transition={{duration: 0.3}}
+              whileHover={{ scale: 1.2 }}
+              whileTap={{ scale: 1.2 }}
+              transition={{ duration: 0.3 }}
               href="https://wa.me/5492615798302"
               target="_blank "
               className="m-auto w-11 hover:bg-green-500 hover:rounded-full"
@@ -48,9 +40,9 @@ function Contacto() {
               <BsWhatsapp size={45} title="Whatsapp: +54 9 2615798302" />
             </motion.a>
             <motion.a
-              whileHover={{scale: 1.2}}
-              whileTap={{scale: 1.2}}
-              transition={{duration: 0.3}}
+              whileHover={{ scale: 1.2 }}
+              whileTap={{ scale: 1.2 }}
+              transition={{ duration: 0.3 }}
               href="https://github.com/gguidoxx"
               target="_blank "
               className="m-auto w-11 "
@@ -58,9 +50,9 @@ function Contacto() {
               <RiGithubLine size={45} title="Github: gguidoxx" />
             </motion.a>
             <motion.a
-              whileHover={{scale: 1.2}}
-              whileTap={{scale: 1.2}}
-              transition={{duration: 0.3}}
+              whileHover={{ scale: 1.2 }}
+              whileTap={{ scale: 1.2 }}
+              transition={{ duration: 0.3 }}
               href="mailto:gudombe@gmail.com"
               target="_blank "
               className="m-auto w-11"

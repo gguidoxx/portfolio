@@ -24,7 +24,7 @@ function Conocimientos() {
   ];
   return (
     <>
-      <div className="text-white">
+      <div className="text-white select-text">
         <h1 className="text-3xl leading-loose text-center text-blue-50">
           Conocimientos
         </h1>

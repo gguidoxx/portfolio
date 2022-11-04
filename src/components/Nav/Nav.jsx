@@ -5,12 +5,9 @@ import { AiOutlineUser } from "react-icons/ai";
 import { MdWorkOutline } from "react-icons/md";
 import { BsBook } from "react-icons/bs";
 import { GoMailRead } from "react-icons/go";
-import { useState } from "react";
 import cv from "../../assets/cv.pdf";
-import cv2 from "../../assets/SVG/cvnew.svg";
 
 function Nav() {
-  const [activeNav, setActiveNav] = useState("#");
 
   function topFunction() {
     document.body.scrollTop = 0; // For Safari
@@ -19,7 +16,7 @@ function Nav() {
 
   return (
     <>
-      <nav class="flex flex-col justify-between items-center  pr-0 pb-2 pl-0 w-auto m-auto sticky top-0 z-0">
+      <nav class="flex flex-col justify-between items-center  pr-0 pb-2 pl-0 w-auto m-auto sticky top-0 select-none">
         <ul class="lg:flex flex-row p-2 m-auto  w-auto  space-x-8  text-font-medium border-0 bg-gray-800 border-gray-700 xsm:hidden z-20">
           <li>
             <a
