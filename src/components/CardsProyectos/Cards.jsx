@@ -11,7 +11,7 @@ function Cards() {
       desc: "Un proyecto e-commerce, consta de una tienda de maquillajes, con pasarela de pagos, carro de compras, logueo con google, registro y dashboard de administrador",
       img: pureglow,
       linkGit: "https://github.com/julietajimenez/PF-henry-grupo18",
-      linkLive: "https://pf-henry-ecommerce.vercel.app/",
+      linkLive: "https://pureglow.vercel.app/",
       video: "https://www.youtube.com/watch?v=RARi-UcgWDA",
     },
     {
@@ -32,7 +32,7 @@ function Cards() {
   ];
   return (
     <section className="pb-24 select-text">
-      <h1 className="text-3xl leading-loose text-center text-blue-50 pb-12 pt-12 ">
+      <h1 className="pt-12 pb-12 text-3xl leading-loose text-center text-blue-50 ">
         Mis proyectos
       </h1>
 
@@ -40,7 +40,7 @@ function Cards() {
         {cards.map((e) => (
           <div
             id={e.title}
-            className="h-full max-w-full m-auto border-2 border-pink-500  rounded-md  bg-slate-200 min-w-min hover:bg-slate-400"
+            className="h-full max-w-full m-auto border-2 border-pink-500 rounded-md bg-slate-200 min-w-min hover:bg-slate-400"
           >
             <div className="h-max w-max">
               <div className="rounded-2xl">
