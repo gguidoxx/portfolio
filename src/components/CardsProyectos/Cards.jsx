@@ -1,7 +1,7 @@
 import React from "react";
 import pureglow from "../../assets/pureglow.jpg";
 import calculadorareact from "../../assets/calculadorareact.jpg";
-import portfolio from "../../assets/portfolio.jpg";
+import todoapp from "../../assets/todoapp.jpg";
 
 import Buttons from "../Buttons/Buttons";
 function Cards() {
@@ -23,11 +23,11 @@ function Cards() {
     },
     {
       //ESTÁ ÚNICAMENTE DE RELLENO, EL PORTFOLIO NO DEBERÍA IR ACÁ
-      title: "Portfolio",
-      desc: "Un portfolio que fue puesto de relleno para ver como quedaría con proyectos reales, acá iría otro a futuro.",
-      img: portfolio,
-      linkGit: "https://github.com/gguidoxx/portfolio",
-      linkLive: "https://guido-gutierrez-portfolio.vercel.app/",
+      title: "ToDo App",
+      desc: "TodoApp: Una página simple, con funcionalidad de una lista de tareas. Hecha para practicar React de un nivel básico.",
+      img: todoapp,
+      linkGit: "https://github.com/gguidoxx/todoapp",
+      linkLive: "https://gtodoapp.vercel.app/",
     },
   ];
   return (
