@@ -2,6 +2,8 @@ import React from "react";
 import pureglow from "../../assets/pureglow.jpg";
 import calculadorareact from "../../assets/calculadorareact.jpg";
 import todoapp from "../../assets/todoapp.jpg";
+import notiapp from "../../assets/notiapp.jpg";
+
 
 import Buttons from "../Buttons/Buttons";
 function Cards() {
@@ -28,6 +30,14 @@ function Cards() {
       img: todoapp,
       linkGit: "https://github.com/gguidoxx/todoapp",
       linkLive: "https://gtodoapp.vercel.app/",
+    },
+    {
+      //ESTÁ ÚNICAMENTE DE RELLENO, EL PORTFOLIO NO DEBERÍA IR ACÁ
+      title: "Noticias App",
+      desc: "NoticiasApp: Desarrollada con React, Redux, Express y PostgreSQL. Una página simple, desarrollo de práctica para trabajar con peticiones, apis y desarrollar CRUD. ",
+      img: notiapp,
+      linkGit: "https://github.com/gguidoxx/newspaper",
+      linkLive: "https://notiapp.vercel.app/",
     },
   ];
   return (
