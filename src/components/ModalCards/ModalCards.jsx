@@ -26,10 +26,11 @@ export default function Modal({ content, title, tecnologies, desc, video }) {
       </button>
       {showModal ? (
         <>
-          <div className="fixed inset-0 z-40 flex items-center justify-center overflow-x-hidden outline-none xsm:pt-80 md:pt-0 focus:outline-none">
-            <div className="relative w-auto max-w-3xl mx-auto my-6 bg-black bg-opacity-25">
+          <div className="fixed inset-0 z-40 flex items-center justify-center overflow-x-hidden outline-none focus:outline-none">
+            <div className="mb-8"></div>
+            <div className="relative w-auto max-w-3xl mx-auto my-6 bg-black bg-opacity-25 xsm:pt-140 md:pt-0">
               {/*content*/}
-              <div className="flex-col w-full bg-white border-0 rounded-lg shadow-lg outline-none relativeflex focus:outline-none">
+              <div className="relative flex flex-col w-full bg-white border-0 rounded-lg shadow-lg outline-none focus:outline-none">
                 {/*header*/}
                 <div className="flex items-start justify-between p-3 border-b border-solid rounded-t border-slate-200">
                   <h3 className="text-3xl font-semibold">{title}</h3>
@@ -83,7 +84,7 @@ export default function Modal({ content, title, tecnologies, desc, video }) {
               </div>
             </div>
           </div>
-          <div className="fixed inset-0 z-30 overflow-hidden bg-black opacity-25"></div>
+          <div className="fixed inset-0 z-30 overflow-hidden bg-black opacity-80"></div>
         </>
       ) : null}
     </>

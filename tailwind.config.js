@@ -24,11 +24,15 @@ module.exports = {
       height: {
         142: "142px",
         "42px": "42px",
-
+      },
+      spacing: {
+        "140": "400px",
       },
       maxHeight: {
         xxs: "10rem",
         xxxs: "4rem",
+        "80vh": "80vh",
+
         "42px": "42px",
       },
       padding: {
