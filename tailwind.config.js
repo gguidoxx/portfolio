@@ -23,10 +23,13 @@ module.exports = {
       },
       height: {
         142: "142px",
+        "42px": "42px",
+
       },
       maxHeight: {
         xxs: "10rem",
         xxxs: "4rem",
+        "42px": "42px",
       },
       padding: {
         1: "4px",

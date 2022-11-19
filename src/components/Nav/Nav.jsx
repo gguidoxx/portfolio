@@ -15,7 +15,7 @@ function Nav() {
 
   return (
     <>
-      <nav class="flex flex-col justify-between items-center  pr-0 pb-2 pl-0 w-auto m-auto sticky top-0 select-none">
+      <nav class="flex flex-col justify-between items-center  pr-0 pb-2 pl-0 w-auto m-auto sticky top-0 select-none z-40">
         <ul class="lg:flex flex-row p-2 m-auto  w-auto  space-x-8  text-font-medium border-0 bg-gray-800 border-gray-700 xsm:hidden z-20">
           <li>
             <a
