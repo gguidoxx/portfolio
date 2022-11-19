@@ -26,7 +26,7 @@ export default function Modal({ content, title, tecnologies, desc, video }) {
       </button>
       {showModal ? (
         <>
-          <div className="fixed inset-0 z-40 flex items-center justify-center overflow-x-hidden outline-none xsm:pt-60 md:pt-0 focus:outline-none">
+          <div className="fixed inset-0 z-40 flex items-center justify-center overflow-x-hidden outline-none xsm:pt-80 md:pt-0 focus:outline-none">
             <div className="relative w-auto max-w-3xl mx-auto my-6 bg-black bg-opacity-25">
               {/*content*/}
               <div className="flex-col w-full bg-white border-0 rounded-lg shadow-lg outline-none relativeflex focus:outline-none">
