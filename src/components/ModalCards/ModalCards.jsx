@@ -11,8 +11,8 @@ export default function Modal({ content, title, tecnologies, desc, video }) {
   };
 
   const handleClose = () => {
-    setShowModal(false);
     allowScroll();
+    setShowModal(false);
   };
 
   return (
@@ -26,7 +26,6 @@ export default function Modal({ content, title, tecnologies, desc, video }) {
       </button>
       {showModal ? (
         <>
-          <div className="fixed inset-0 z-30 bg-black opacity-25"></div>
           <div className="fixed inset-0 z-40 flex items-center justify-center overflow-x-hidden overflow-y-hidden outline-none focus:outline-none">
             <div className="relative w-auto max-w-3xl mx-auto my-6 overflow-hidden bg-black bg-opacity-25">
               {/*content*/}
@@ -76,7 +75,7 @@ export default function Modal({ content, title, tecnologies, desc, video }) {
                   <button
                     className="px-6 py-2 mb-1 mr-1 text-sm font-bold text-red-500 uppercase transition-all duration-150 ease-linear outline-none background-transparent focus:outline-none"
                     type="button"
-                    onClick={() => setShowModal(false)}
+                    onClick={() => handleClose()}
                   >
                     Cerrar
                   </button>
@@ -84,6 +83,7 @@ export default function Modal({ content, title, tecnologies, desc, video }) {
               </div>
             </div>
           </div>
+          <div className="fixed inset-0 z-30 overflow-hidden bg-black opacity-25"></div>
         </>
       ) : null}
     </>

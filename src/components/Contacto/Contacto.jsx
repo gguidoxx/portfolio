@@ -86,9 +86,13 @@ function Contacto() {
               transition={{ duration: 0.3 }}
               href="mailto:gudombe@gmail.com"
               target="_blank "
-              className="m-auto w-11"
+              className="m-auto w-11 "
             >
-              <AiOutlineMail size={45} title="Correo: gudombe@gmail.com" />
+              <AiOutlineMail
+                size={45}
+                title="Correo: gudombe@gmail.com"
+                className="hover:text-yellow-400"
+              />
             </motion.a>
           </div>
         </div>
@@ -125,7 +129,7 @@ function Contacto() {
                     required
                     type="text"
                     id="website-admin"
-                    class="rounded-none rounded-r-lg border border-pink-600  focus:ring-blue-500 focus:border-blue-500 block flex-1 min-w-0 md:w-56 text-sm p-2.5 bg-gray-700 placeholder-gray-400 text-white  focus:bg-gray-900"
+                    class="rounded-none rounded-r-lg border border-pink-600  block flex-1 min-w-0 md:w-56 text-sm p-2.5 bg-gray-700 placeholder-gray-400 text-white  "
                     placeholder="example@mail.com"
                     name="reply_to"
                   />
