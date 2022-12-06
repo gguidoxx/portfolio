@@ -68,7 +68,7 @@ function Cards() {
         </ul>
       ),
     },
-    {
+    /*{
       //ESTÁ ÚNICAMENTE DE RELLENO, EL PORTFOLIO NO DEBERÍA IR ACÁ
       title: "Noticias App",
       desc: "NoticiasApp: Desarrollada con React, Redux, Express y PostgreSQL. Una página simple, desarrollo de práctica para trabajar con peticiones, apis y desarrollar CRUD. (Aún en desarrollo)",
@@ -87,7 +87,7 @@ function Cards() {
           <li>TailwindCSS</li>
         </ul>
       ),
-    },
+    },*/
   ];
   return (
     <section className="pb-24 select-text">
