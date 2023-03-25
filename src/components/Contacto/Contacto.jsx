@@ -171,7 +171,7 @@ function Contacto() {
                 name="message"
               />
               <input
-                class="my-2 p-1 border-2 rounded-lg border-pink-600 hover:text-slate-100 hover:bg-pink-600 w-40 justify-end cursor-pointer"
+                class="my-2 p-1 border-2 rounded-lg border-pink-600 hover:text-slate-100 hover:bg-pink-600 justify-end cursor-pointer"
                 type="submit"
                 value="Enviar correo"
               ></input>
