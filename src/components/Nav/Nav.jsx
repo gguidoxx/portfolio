@@ -5,7 +5,7 @@ import { AiOutlineUser } from "react-icons/ai";
 import { MdWorkOutline } from "react-icons/md";
 import { BsBook } from "react-icons/bs";
 import { GoMailRead } from "react-icons/go";
-import cv from "../../assets/cv.pdf";
+import cv from "../../assets/GuidoGutierrez.pdf";
 
 function Nav() {
   function topFunction() {
